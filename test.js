@@ -4,7 +4,7 @@ const assert = require('assert');
 const CodeBreaker = require('./main');
 
 beforeEach(function () {
-  CodeBreaker.setNum(1234);
+  CodeBreaker.setNum('1234');
 })
 
 describe('CodeBreaker', function() {

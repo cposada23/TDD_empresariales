@@ -26,7 +26,7 @@ module.exports = {
     return resultX+result_;
   },
   setNum:function(number) {
-    number = number.toString();
+    // number = number.toString();
     // = number.split('');
     NumberToBreak = number;
   }
