@@ -7,7 +7,7 @@ app.set('port', (process.env.PORT || 3000));
 app.get('/setsecret/:secret', function (req, res) {
   number = req.params.secret;
   CodeBreaker.setNum(number);
-  res.send({message: 'ok, let the game begin'});
+  res.send({message: 'ok, let the game begin!'});
 });
 
 app.get('/guess/:number', function (req, res) {
