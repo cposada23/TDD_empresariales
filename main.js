@@ -1,7 +1,7 @@
-const NumberToBreak = ['1','2','3','4'], ERROR = 'ERROR';
+var NumberToBreak = ['1','2','3','4'], ERROR = 'ERROR';
 module.exports = {
   codeBreaker:function(number){
-    let resultX = '', result_ = ''; 
+    let resultX = '', result_ = '';
     if(number === undefined)
       return ERROR;
     number = number.toString();
@@ -24,5 +24,10 @@ module.exports = {
       }
     }
     return resultX+result_;
+  },
+  setNum:function(number) {
+    number = number.toString();
+    // = number.split('');
+    NumberToBreak = number;
   }
 }

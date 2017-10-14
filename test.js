@@ -3,6 +3,10 @@ const chai = require('chai');
 const assert = require('assert');
 const CodeBreaker = require('./main');
 
+beforeEach(function () {
+  CodeBreaker.setNum(1234);
+})
+
 describe('CodeBreaker', function() {
   it('should return XXXX if 1234 is sended', function() {
     let result = CodeBreaker.codeBreaker(1234);
