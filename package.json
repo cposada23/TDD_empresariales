@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "./node_modules/mocha/bin/mocha test.js"
   },
   "author": "",
@@ -11,6 +12,8 @@
   "dependencies": {
     "chai": "^4.1.2",
     "express": "^4.16.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "should": "^13.1.2",
+    "supertest": "^3.0.0"
   }
 }
